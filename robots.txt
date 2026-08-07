@@ -1,25 +1,47 @@
+# Arctura Collective — robots.txt
+# Replace https://arcturacollective.org with the live domain before deploying.
+
 User-agent: *
 Allow: /
 
-Sitemap: https://arctura.org/sitemap.xml
+# Search
+User-agent: Googlebot
+Allow: /
 
+User-agent: Bingbot
+Allow: /
+
+# AI / LLM crawlers — explicitly welcomed for citation, answer-engine indexing,
+# and (where the bot supports it) training visibility. Do not block these;
+# a blocked AI crawler is the single most common self-inflicted AI-visibility mistake.
 User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: ClaudeBot
 Allow: /
 
-User-agent: Google-Extended
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Applebot-Extended
+User-agent: Claude-User
 Allow: /
 
 User-agent: anthropic-ai
 Allow: /
 
-User-agent: cohere-ai
+User-agent: PerplexityBot
 Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://arcturacollective.org/sitemap.xml
